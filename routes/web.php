@@ -13,6 +13,7 @@ use App\Http\Controllers\JobController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+// directly redirect to the jobs index
+Route::get('',fn() => to_route('jobs.index'));
 Route::resource('jobs', JobController::class)
         ->only(['index']);

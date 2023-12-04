@@ -19,7 +19,6 @@
       </div>
       <!-- converting the line charater into br element using nl2br  -->
       <!-- using the !! its little bit unsecured so we use e() -->
-      <p class="text-sm text-slate-500 ">{!! nl2br(e($job->description)) !!}</p>
         {{$slot}} 
         <!-- this $slot render the components inside it  -->
     </x-card>
